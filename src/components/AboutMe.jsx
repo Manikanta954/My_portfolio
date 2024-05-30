@@ -1,6 +1,6 @@
 // src/components/AboutMe.js
 import React from 'react';
 
-const AboutMe = () => <h2>About Me</h2>;
+const AboutMe = () => <h1 style={{paddingLeft:"30px"}}>About Me</h1>;
 
 export default AboutMe;
