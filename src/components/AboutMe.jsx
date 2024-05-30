@@ -5,7 +5,7 @@ import './AboutMe.css'
 const AboutMe = () =>( 
 <div style={{paddingRight:'30px'}}>
 <h1 style={{paddingLeft:"40px",fontSize:'50px'}}>About Me <span className="jumping-smiley">😊</span></h1>
-<p style={{paddingLeft:'40px',color:'#8f8f8f'}}> I am a skilled and passionate fresher, I bring a unique blend of 
+<p style={{paddingLeft:'40px',color:'#8f8f8f',fontSize:'25px'}}> I am a skilled and passionate fresher, I bring a unique blend of 
     enthusiasm, creativity, and technical expertise to the table. 
     . I am eager to leverage my skills and contribute to innovative projects, driving success and adding value to the company. 
     With a relentless drive for excellence and a keen eye for detail, I am committed to delivering high-quality results and continuous improvement.
