@@ -4,15 +4,13 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import './home.css';  // Import the CSS file
-import me from './Manikanta.png';
+import me1 from './me1.png';
 
 const Home = () => (
   <div className="home-container">
     <h1 style={{fontSize:"40px"}}>Welcome! I am Manikanta Talagama</h1>
-    <p>I am a <ReactTypingEffect text={['Developer', 'Designer', 'Creator','Flutter Developer','React Developer']} speed={100} eraseSpeed={50} eraseDelay={2000} typingDelay={500} /></p>
-    <div className="image-container">
-      <img src={me} alt="My Portrait" className="portrait" />
-    </div>
+    <p style={{fontSize:"30px", color:'#7a7a7a'}}>I am a <ReactTypingEffect text={['Developer', 'Designer', 'Creator','Flutter Developer','React Developer']} speed={100} eraseSpeed={50} eraseDelay={2000} typingDelay={500} /></p>
+    <p><img src={me1} alt="mypic" style={{float:'',height:'300px',width:'500px'}} /></p>
   </div>
 );
 

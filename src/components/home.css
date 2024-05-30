@@ -1,21 +1,6 @@
-/* src/components/Home.css */
-/* .home-container {
+
+.home-container {
     padding-left: 50px;
     padding-top: 50px;
   }
-   */
-   .home-container {
- 
-    align-items: center;
-    padding: 20px;
-  }
   
-  .portrait {
-    padding-top: 10px ;
-    width: 700px; /* Adjust the size as needed */
-    height: 600px;
-    float: right;
-    border: 0px;
-     /* Optional: to make the image circular */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
-  }
