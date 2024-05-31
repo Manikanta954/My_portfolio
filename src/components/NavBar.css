@@ -33,6 +33,9 @@
     color: black;
   }
    */
+   html {
+    scroll-behavior: smooth;
+  }
    .navbar {
     text-align: right;
     background-color: black;
