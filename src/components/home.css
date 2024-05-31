@@ -2,7 +2,7 @@
   padding-top: 50px;
   padding-left: 55px;
   background-color: black;
-  min-height:82.4vh; /* Ensure the background covers the full viewport height */
+  /* Ensure the background covers the full viewport height */
    /* Include padding in the element's total width and height */
 }
 .waving-hand {

@@ -1,4 +1,4 @@
-/* src/components/NavBar.css */
+/* src/components/NavBar.css
 .navbar {
     text-align: right;
     background-color: black;
@@ -31,5 +31,54 @@
     border-radius: 6px;
     padding: 10px;
     color: black;
+  }
+   */
+   .navbar {
+    text-align: right;
+    background-color: black;
+    padding: 10px 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .nav-item {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    background-color: #11f670;
+    border-radius: 6px;
+    padding: 10px;
+    color: black;
+  }
+  
+  .nav-item a.active {
+    position: relative;
+    color: white;
+  }
+  
+  .nav-item a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust this value to control the underline position */
+    width: 100%;
+    height: 2px; /* Adjust this value to control the underline thickness */
+    background-color: #11f670;
   }
   
