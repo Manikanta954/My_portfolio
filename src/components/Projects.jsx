@@ -12,7 +12,7 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-       <h1 style={{paddingLeft:'30px',fontSize:'40px'}}>My Projects</h1>
+       <h1 style={{paddingLeft:'30px',fontSize:'40px',color:'#11f670',fontWeight:'bolder'}}>My Projects</h1>
     <div className="projects-grid">
      
       {projects.map((proj) => (

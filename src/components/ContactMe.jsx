@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactMe.css';
-import mail from './sending.gif';
+import mail from './sending1.gif';
 const ContactMe = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -39,11 +39,11 @@ const ContactMe = () => {
   return (
     <center>
     <div>
-         <img src={mail} alt="" style={{height:'200px',width:'300px'}} />
+         <img src={mail} alt="" style={{height:'250px',width:'300px'}} />
     <div className="contact-me-container">
        
       <form onSubmit={handleSubmit} className="contact-me-form">
-        <h2>Contact Me</h2>
+        <h2 style={{color:'#0BD666',fontSize:'25px',fontWeight:'bold'}}>Contact Me</h2>
         <input
           type="text"
           name="name"

@@ -1,7 +1,7 @@
 /* src/components/NavBar.css */
 .navbar {
     text-align: right;
-    background-color: #e3e4e7;
+    background-color: black;
     padding: 10px 20px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -21,14 +21,15 @@
   
   .nav-item a {
     text-decoration: none;
-    color: #333;
+    color: white;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
   }
   
   .nav-item a:hover {
-    background-color: #9e9c9c;
+    background-color:#11f670;
     border-radius: 6px;
     padding: 10px;
+    color: black;
   }
   
