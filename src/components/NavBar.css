@@ -40,6 +40,10 @@
 
 /* src/components/NavBar.css */
 
+/* src/components/NavBar.css */
+
+/* src/components/NavBar.css */
+
 html {
   scroll-behavior: smooth;
 }
@@ -71,13 +75,6 @@ html {
   position: relative;
 }
 
-.nav-item a:hover {
-  background-color: #11f670;
-  border-radius: 6px;
-  padding: 10px;
-  color: black;
-}
-
 .nav-item a.active {
   color: white;
 }
@@ -91,10 +88,10 @@ html {
   height: 2px;
   background-color: #11f670;
   transition: width 0.3s ease; /* Keep the animation */
+  box-shadow: 0px 2px 4px rgba(17, 246, 112, 0.5);  /* Light shadow */
 }
 
-.nav-item a.active::after,
-.nav-item a:hover::after {
+.nav-item a.active::after {
   width: calc(100% - 20px); /* Adjusted to consider padding */
   left: 10px; /* Adjusted to consider padding */
 }

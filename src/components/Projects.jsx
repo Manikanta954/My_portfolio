@@ -1,3 +1,5 @@
+/* src/components/Projects.js */
+
 import React from 'react';
 import './Projects.css';
 
@@ -11,20 +13,17 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div>
-       <h1 style={{paddingLeft:'30px',fontSize:'40px',color:'#11f670',fontWeight:'bolder'}}>My Projects</h1>
     <div className="projects-grid">
-     
       {projects.map((proj) => (
-        <div key={proj.id} className="proj-box">
+        <div key={proj.id} className="proj-card">
           <img src={proj.imageUrl} alt={proj.title} className="proj-image" />
-          <div className="proj-info">
+          <div className="proj-details">
             <h3 className="proj-title">{proj.title}</h3>
             <p className="proj-description">{proj.description}</p>
           </div>
         </div>
       ))}
-    </div></div>
+    </div>
   );
 };
 
