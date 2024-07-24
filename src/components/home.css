@@ -1,9 +1,12 @@
 .home-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px; /* Reduced padding */
   background-color: black;
   font-family: 'Great Vibes', cursive;
+  margin-top: -120px;
+ 
 }
 
 .text-container {
@@ -17,12 +20,12 @@
 }
 
 .welcome-text {
-  font-size: 40px;
+  font-size: 35px;
   margin: 0; /* Remove margin */
 }
 
 .name-text {
-  font-size: 40px;
+  font-size: 38px;
   margin: 0; /* Remove margin */
 }
 
@@ -31,12 +34,12 @@
 }
 
 .name-text .initial {
-  font-size: 50px;
+  font-size:44px;
   padding: 5px;
 }
 
 .typing-effect-text {
-  font-size: 35px;
+  font-size: 32px;
   margin: 0; /* Remove margin */
 }
 
@@ -63,10 +66,11 @@
 
 .image-container {
   margin-left:10px;
+  margin-right: 10px;
 }
 
 .profile-image {
-  width: 300px; /* Increased size of the image */
+  width: 600px; /* Increased size of the image */
   height: auto;
   border: none;
 }
