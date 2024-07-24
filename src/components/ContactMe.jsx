@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactMe.css';
 import mail from './sending1.gif';
+import yes from './yes.png';
 const ContactMe = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -68,7 +69,7 @@ const ContactMe = () => {
           required
         />
         <button type="submit" disabled={isSending}>
-          {isSending ? 'Sending...' : isSent ? '✓' : 'Send'}
+          {isSending ? 'Sending...' : isSent ? <img src={yes} style={{height:'22px',width:'25px'}}></img> : 'Send'}
         </button>
       </form>
     </div></div></center>
