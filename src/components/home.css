@@ -1,10 +1,49 @@
 .home-container {
-  padding-top: 30px;
-  padding-left: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px; /* Reduced padding */
   background-color: black;
-  /* Ensure the background covers the full viewport height */
-   /* Include padding in the element's total width and height */
+  font-family: 'Great Vibes', cursive;
 }
+
+.text-container {
+  flex-grow: 1;
+}
+
+.welcome-text,
+.name-text,
+.typing-effect-text {
+  color: white;
+}
+
+.welcome-text {
+  font-size: 40px;
+  margin: 0; /* Remove margin */
+}
+
+.name-text {
+  font-size: 40px;
+  margin: 0; /* Remove margin */
+}
+
+.name-text .highlight {
+  color: #11f670;
+}
+
+.name-text .initial {
+  font-size: 50px;
+  padding: 5px;
+}
+
+.typing-effect-text {
+  font-size: 35px;
+  margin: 0; /* Remove margin */
+}
+
+.typing-effect-text .highlight {
+  color: #11f670;
+}
+
 .waving-hand {
   display: inline-block;
   animation: wave 2s infinite;
@@ -21,6 +60,20 @@
   60% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
-body{
+
+.image-container {
+  margin-left:10px;
+}
+
+.profile-image {
+  width: 300px; /* Increased size of the image */
+  height: auto;
+  border: none;
+}
+
+body {
   background-color: black;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Poppins', sans-serif;
 }

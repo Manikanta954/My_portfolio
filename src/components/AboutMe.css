@@ -1,10 +1,10 @@
 .about-me-container {
   background: black;
-  padding: 10px;
+
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
-  font-family: 'Merienda', cursive;
+  font-family: 'Greatvibes', cursive;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -51,6 +51,7 @@
   align-items: center;
   margin-top: 20px;
   padding-left: 40px;
+  
 }
 
 .tab {
@@ -121,4 +122,33 @@
 
 .skills-content li span, .certifications-content li span, .education-content li span {
   color: #11f670;
+}
+
+.starburst-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: burst 1s ease-out forwards;
+}
+
+@keyframes burst {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(100px - 50%), calc(100px - 50%)) scale(0);
+  }
 }
