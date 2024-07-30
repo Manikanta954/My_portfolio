@@ -1,49 +1,4 @@
-/* src/components/NavBar.css
-.navbar {
-    text-align: right;
-    background-color: black;
-    padding: 10px 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-  }
-  
-  .nav-item {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-item a:hover {
-    background-color:#11f670;
-    border-radius: 6px;
-    padding: 10px;
-    color: black;
-  }
-   */
-   /* src/components/NavBar.css */
-/* src/components/NavBar.css */
-
-/* src/components/NavBar.css */
-
-/* src/components/NavBar.css */
-
-/* src/components/NavBar.css */
-
-/* src/components/NavBar.css */
-
+/* Base styles for larger screens (desktops) */
 html {
   scroll-behavior: smooth;
 }
@@ -73,10 +28,14 @@ html {
   color: white;
   padding: 5px 10px;
   position: relative;
+  transition: background-color 0.3s ease;
 }
 
-.nav-item a.active {
-  color: white;
+.nav-item a:hover {
+  background-color: #11f670;
+  border-radius: 6px;
+  padding: 10px;
+  color: black;
 }
 
 .nav-item a::after {
@@ -87,11 +46,51 @@ html {
   width: 0;
   height: 2px;
   background-color: #11f670;
-  transition: width 0.3s ease; /* Keep the animation */
-  box-shadow: 0px 2px 4px rgba(17, 246, 112, 0.5);  /* Light shadow */
+  transition: width 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(17, 246, 112, 0.5);
 }
 
 .nav-item a.active::after {
   width: calc(100% - 20px); /* Adjusted to consider padding */
   left: 10px; /* Adjusted to consider padding */
+}
+
+/* Responsive styles for tablets (portrait and landscape) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .nav-list {
+    display: inline-block; /* Keep horizontal layout */
+  }
+
+  .nav-item {
+    margin-left: 15px; /* Reduced margin */
+  }
+
+  .nav-item a {
+    padding: 4px 8px; /* Reduced padding */
+    font-size: 8px; /* Reduced font size */
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-list {
+    display: inline-block; /* Keep horizontal layout */
+  }
+
+  .nav-item {
+    margin-left: 10px; /* Reduced margin */
+  }
+
+  .nav-item a {
+    padding: 3px 6px; /* Reduced padding */
+    font-size: 8px; /* Further reduced font size */
+  }
 }

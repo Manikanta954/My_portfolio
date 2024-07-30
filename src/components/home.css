@@ -1,12 +1,41 @@
+/* Base styles for larger screens (desktops) */
 .home-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px; /* Reduced padding */
+  padding: 30px;
   background-color: black;
   font-family: 'Great Vibes', cursive;
-  margin-top: -120px;
- 
+  margin-top: -140px;
+}
+
+.hire-me-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+  background-color: #11f670;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hire-me-button:hover,
+.hire-me-button:focus {
+  background-color: #0da95e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(17, 246, 112, 0.6);
+}
+
+.hire-me-button:active {
+  background-color: #2ee740;
+  transform: translateY(1px);
+  box-shadow: none;
 }
 
 .text-container {
@@ -21,12 +50,12 @@
 
 .welcome-text {
   font-size: 35px;
-  margin: 0; /* Remove margin */
+  margin: 0;
 }
 
 .name-text {
   font-size: 38px;
-  margin: 0; /* Remove margin */
+  margin: 0;
 }
 
 .name-text .highlight {
@@ -34,13 +63,13 @@
 }
 
 .name-text .initial {
-  font-size:44px;
+  font-size: 44px;
   padding: 5px;
 }
 
 .typing-effect-text {
   font-size: 32px;
-  margin: 0; /* Remove margin */
+  margin: 0;
 }
 
 .typing-effect-text .highlight {
@@ -65,19 +94,97 @@
 }
 
 .image-container {
-  margin-left:10px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
 .profile-image {
-  width: 600px; /* Increased size of the image */
+  width: 600px;
   height: auto;
   border: none;
 }
 
 body {
   background-color: black;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive styles for tablets (portrait and landscape) */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: -100px;
+  }
+
+  .hire-me-button {
+    padding: 12px 25px;
+    font-size: 10px;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+  }
+
+  .name-text {
+    font-size: 21px;
+  }
+
+  .name-text .initial {
+    font-size: 22px;
+  }
+
+  .typing-effect-text {
+    font-size: 26px;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .home-container {
+    padding: 15px;
+    margin-top: -10px;
+  }
+
+  .hire-me-button {
+    padding: 10px 20px;
+    font-size: 30px;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .welcome-text {
+    font-size: 18px;
+  }
+
+  .name-text {
+    font-size: 19px;
+  }
+
+  .name-text .initial {
+    font-size: 19px;
+  }
+
+  .typing-effect-text {
+    font-size: 12px;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 400px;
+  }
 }
