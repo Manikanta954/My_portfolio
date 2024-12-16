@@ -1,6 +1,6 @@
+/* Default layout for desktop */
 .about-me-container {
   background: black;
-
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
@@ -15,13 +15,17 @@
   transform: translateY(0);
 }
 
+/* Center the heading */
 .about-me-heading {
   padding-left: 40px;
   font-size: 50px;
   color: #11f670;
   font-weight: bolder;
+  text-align: center; /* Center the heading */
+  margin: 0 auto; /* Ensure it’s centered */
 }
 
+/* Smiley animation */
 .jumping-smiley {
   display: inline-block;
   animation: jump 1s infinite;
@@ -46,12 +50,13 @@
   margin-bottom: 20px;
 }
 
+/* Center the tabs */
 .tabs {
   display: flex;
+  justify-content: center; /* Center the tabs */
   align-items: center;
   margin-top: 20px;
-  padding-left: 40px;
-  
+  padding-left: 0; /* Remove padding-left */
 }
 
 .tab {
@@ -91,6 +96,7 @@
   width: 100%;
 }
 
+/* Tab content */
 .tab-content {
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -150,5 +156,113 @@
   100% {
     opacity: 0;
     transform: translate(calc(100px - 50%), calc(100px - 50%)) scale(0);
+  }
+}
+
+/* Styling for the skill icons */
+.skill-icon {
+  width: 60px;  /* Fixed width for uniformity */
+  height: 60px;  /* Fixed height for uniformity */
+  object-fit: contain;  /* Ensures the images retain their aspect ratio and don't get stretched */
+  margin-bottom: 10px;  /* Space between the icon and text */
+}
+
+/* Skill box styling (remains unchanged) */
+.skill-box {
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Grid styling for skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding-left: 0; /* Center the grid */
+  margin: 0 auto; /* Ensure grid is centered */
+}
+
+/* Responsive design for mobile and tablet view */
+@media (max-width: 768px) {
+  .about-me-container {
+    padding: 10px;
+  }
+
+  /* Center the About Me heading for mobile */
+  .about-me-heading {
+    font-size: 35px;
+    padding-left: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Stacking tabs vertically on mobile */
+  .tabs {
+    flex-direction: column;
+    align-items: center; /* Center tabs vertically */
+    padding-left: 0;
+    margin-top: 20px; /* Ensure there’s space between heading and tabs */
+  }
+
+  .tab {
+    font-size: 25px;
+    padding: 12px 0;
+    margin: 5px 0;
+  }
+
+  /* Skills grid will show 2 items per row */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  /* Adjust icon size for mobile */
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Centering the tab content */
+  .tab-content {
+    padding: 10px;
+    margin: 0 auto; /* Center the tab content */
+  }
+}
+
+/* Additional responsiveness for very small devices */
+@media (max-width: 480px) {
+  .about-me-heading {
+    font-size: 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
+  .tab {
+    font-size: 20px;
+  }
+
+  .skill-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Ensure the tab content remains centered */
+  .tab-content {
+    display: block !important;
+    opacity: 1;
+    transform: translateY(0);
+    margin: 0 auto;
   }
 }
