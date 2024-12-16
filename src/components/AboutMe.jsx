@@ -55,6 +55,12 @@ const AboutMe = () => {
         >
           Education
         </div>
+        <div 
+          className={`tab ${activeTab === 'education' ? 'active ' + (animate ? 'active-animate' : '') : ''}`} 
+          onClick={() => handleTabClick('education')}
+        >
+          Achievements
+        </div>
       </div>
 
       <div className="tab-content">
@@ -73,8 +79,11 @@ const AboutMe = () => {
         {activeTab === 'certifications' && (
           <div className="certifications-content">
             <ul>
-              <li>Certification 1</li>
-              <li>Certification 2</li>
+              <li><span>Data Structures in python</span> : Coursera, Michlegon University</li>
+              <li><span>Artificial Intelligence </span> : NPTEL IIT Madras</li>
+              <li><span>Deep Learning</span> : NPTEL IIT Madras</li>
+              <li><span>Introduction to Flutter</span> : Simpli Learn</li>
+              <li><span>Public Speaking</span> : Coursera, Shangai University</li>
             </ul>
           </div>
         )}

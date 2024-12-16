@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactMe.css';
-import mail from './sending1.gif';
-import yes from './yes.png';
+import mail from '../Assets/sending1.gif';
+import yes from '../Assets/yes.png';
 const ContactMe = () => {
   const [formData, setFormData] = useState({
     name: '',

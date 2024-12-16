@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import './home.css';  // Import the CSS file
-import me1 from './me2.png';  // Make sure this path is correct
+import me1 from '../Assets/me2.png';  // Make sure this path is correct
 
 const Home = () => (
   <div className="home-container">
